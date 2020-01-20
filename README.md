@@ -12,16 +12,15 @@ Vue.prototype.alert = alert;
 
 ```javascript
 testSheets() {
-				this.alert.showSheets("确认提交？", ['OK']).then(res => {
-					console.log('res', res);
-				})
-
-			},
-			testLoading() {
-				this.alert.show('loading...')
-				var _this = this;
-				setTimeout(function() {
-					_this.alert.dismiss()
-				}, 3000)
-			}
+    this.alert.showSheets("确认提交？", ['OK']).then(res => {
+		console.log('res', res);
+	})
+},
+testLoading() {
+	this.alert.show('loading...')
+	var _this = this;
+	setTimeout(function() {
+		_this.alert.dismiss()
+	}, 3000)
+}
 ```
